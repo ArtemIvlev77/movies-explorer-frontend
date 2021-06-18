@@ -45,7 +45,15 @@
 .promo__image {
   width: 310px;
   height: 304px;
+  transition: linear 20s;
 }
+
+.promo__image:hover {
+  transform: scale(1.1);
+  transform: rotate(360deg);
+}
+
+
 
 .promo__learn-more {
   font-family: 'Inter', Arial, sans-serif;
@@ -61,5 +69,11 @@
   outline-color: #fff;
   cursor: pointer;
   margin-bottom: 75px;
+  transition: ease-in-out .3s;
+}
+
+.promo__learn-more:hover {
+  transform: scale(1.2);
+  background: #2BE080;
 }
 

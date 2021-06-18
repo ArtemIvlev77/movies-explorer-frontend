@@ -1,0 +1,87 @@
+.aboutMe{
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 110px 70px 0;
+}
+
+.aboutMe__title {
+  font-family: 'Inter', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 27px;  
+  margin: 0;
+}
+
+.aboutMe__title::after{
+  content: '';
+  display: block;
+  box-sizing: border-box;
+  border-bottom: 1px solid #000;
+  padding-top: 23px;
+  margin-bottom: 90px;
+}
+
+.aboutMe__name{
+  font-family: 'Inter', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 58px;  
+  margin: 0 0 18px;
+}
+
+.aboutMe__subtitle {
+  font-family: 'Inter', Arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px; 
+  margin: 0 0 26px; 
+}
+
+.aboutMe__content{
+  display: flex;
+  justify-content: space-between;
+}
+
+.aboutMe__content_about {
+  font-family: 'Inter', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  margin-right: 270px;
+  margin-bottom: 99px;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  max-width: 600px;
+}
+
+.aboutMe__content_photo {
+  width: 270px;
+  height: 327px;
+  object-fit: contain;
+}
+
+.aboutMe__content_social {
+ display: flex;
+ justify-content: flex-start;
+ column-gap: 20px;
+ list-style-type: none;
+ padding: 0;
+ margin-bottom: 100px;
+}
+
+.aboutMe__content_link {
+  font-family: 'Inter', Arial, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration: none;
+  color: #000;
+  transition: ease-in-out .3s;
+}
+
+.aboutMe__content_link:hover {
+  font-size: 17px;
+  transform: scale(1.2);
+  color:  #2BE080;
+}
