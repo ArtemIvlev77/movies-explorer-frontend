@@ -61,3 +61,35 @@
   transform: scale(1.2);
   color:  #2BE080;
 }
+
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 80px 30px 20px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .footer {
+    padding: 80px 10px 10px;
+  }
+
+  .footer__title {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .footer__wrapper {
+    flex-direction: column-reverse;
+    row-gap: 30px;
+  }
+
+  .footer__list {
+    flex-direction: column;
+    row-gap: 12px;
+  }
+
+  .footer__copyright {
+    color: #8b8b8b;
+  }
+}

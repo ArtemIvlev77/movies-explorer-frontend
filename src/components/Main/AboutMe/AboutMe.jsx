@@ -1,60 +1,43 @@
 import React from "react";
+import profilePhoto from "../../../images/photo.svg";
 import "./AboutMe.css";
-import photo from "../../../images/photo.svg";
 
 function AboutMe() {
   return (
-    <div className="aboutMe">
-      <h2 className="aboutMe__title" id="aboutMe">
+    <div className="about-me">
+      <h2 className="about-me__title" id="author">
         Студент
       </h2>
-      <div className="aboutMe__content">
-        <div className="aboutMe__text">
-          <h3 className="aboutMe__name">Артём</h3>
-          <span className="aboutMe__subtitle">
-            Фронтенд-разработчик, 31 год
-          </span>
-          <p className="aboutMe__content_about">
-            Я родился в Саратове и с 2015 года живу в Москве. У меня есть жена и
-            сын. Я люблю слушать музыку, а ещё увлекаюсь ездой на велосипеде.
-            Недавно, c 2020 года начал кодить. Так же в 2020 году приступил к
-            прохождению курса веб-разработчика в Яндекс.Практикуме. Ближе к
-            окончанию курса стал брать фриланс-заказы.
+      <div className="about-me__cover">
+        <div className="about-me__wrapper">
+          <h3 className="about-me__text-title">Виталий</h3>
+          <p className="about-me__text-subtitle">
+            Фронтенд-разработчик, 30 лет
           </p>
-          <ul className="aboutMe__content_social">
-            <li>
-              <a
-                className="aboutMe__content_link"
-                href="https://www.facebook.com/artem.ivlev.1/"
-                target="_blank" rel="noopener noreferrer"
-              >
+          <p className="about-me__text-description">
+            Я родился и живу в Саратове, закончил факультет экономики СГУ. У
+            меня есть жена и дочь. Я люблю слушать музыку, а ещё увлекаюсь
+            бегом. Недавно начал кодить. С 2015 года работал в компании «СКБ
+            Контур». После того, как прошёл курс по веб-разработке, начал
+            заниматься фриланс-заказами и ушёл с постоянной работы.
+          </p>
+          <ul className="about-me__list">
+            <li className="about-me__item">
+              <a className="about-me__link" href="https://praktikum.yandex.ru/">
                 Facebook
               </a>
             </li>
-            <li>
-              <a
-                className="aboutMe__content_link"
-                href="https://github.com/ArtemIvlev77"
-                target="_blank" rel="noopener noreferrer"
-              >
+            <li className="about-me__item">
+              <a className="about-me__link" href="https://praktikum.yandex.ru/">
                 Github
-              </a>
-            </li>
-            <li>
-              <a
-                className="aboutMe__content_link"
-                href="https://www.linkedin.com/in/artem-ivlev-216ab4210/"
-                target="_blank" rel="noopener noreferrer"
-              >
-                LinkedIn
               </a>
             </li>
           </ul>
         </div>
         <img
-          className="aboutMe__content_photo"
-          src={photo}
-          alt="Фото студента"
+          className="about-me__profile-photo"
+          src={profilePhoto}
+          alt="Фото автора"
         />
       </div>
     </div>

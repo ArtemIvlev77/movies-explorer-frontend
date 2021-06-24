@@ -47,8 +47,10 @@ padding: 100px 70px;
 .techs__list {
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   column-gap: 10px;
+  row-gap: 10px;
 }
 
 .techs__list-item {
@@ -68,4 +70,39 @@ padding: 100px 70px;
   transform: scale(1.2);
   background: #2BE080;
 
+}
+
+@media screen and (max-width: 768px) {
+  .techs {
+    padding: 90px 50px;
+  }
+
+  .techs__list {
+    margin: 0 0 90px 0;
+  }
+
+  .techs__front-subtitle {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .techs {
+    padding: 70px 18px;
+  }
+
+  .techs__title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .techs__front-title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .techs__front-subtitle {
+    margin: 0 auto 70px;
+  }
 }

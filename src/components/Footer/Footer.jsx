@@ -1,3 +1,4 @@
+import React from "react";
 import "./Footer.css";
 
 function Footer() {
@@ -10,7 +11,8 @@ function Footer() {
         <span className="footer__copyright">&copy; 2021</span>
         <ul className="footer__list">
           <li>
-            <a className="footer__link"
+            <a
+              className="footer__link"
               href="https://praktikum.yandex.ru/web/"
               target="_blank"
               rel="noopener noreferrer"
@@ -19,7 +21,8 @@ function Footer() {
             </a>
           </li>
           <li>
-            <a className="footer__link"
+            <a
+              className="footer__link"
               href="https://github.com/ArtemIvlev77"
               target="_blank"
               rel="noopener noreferrer"
@@ -28,7 +31,8 @@ function Footer() {
             </a>
           </li>
           <li>
-            <a className="footer__link"
+            <a
+              className="footer__link"
               href="https://www.facebook.com/artem.ivlev.1/"
               target="_blank"
               rel="noopener noreferrer"

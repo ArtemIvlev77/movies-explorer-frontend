@@ -15,8 +15,8 @@ function Form({
   return (
     <form
       className="form"
-      autocomplete="off"
-      onsubmit={submitHandle}
+      autoComplete="off"
+      onSubmit={submitHandle}
       name={`${formName}-form`}
     >
       {children}
@@ -30,7 +30,7 @@ function Form({
           id="email"
           name="email"
           required
-          minlength="2"
+          minLength="2"
           value={values.email || ""}
           onFocus={onFocus}
           onChange={handleChange}

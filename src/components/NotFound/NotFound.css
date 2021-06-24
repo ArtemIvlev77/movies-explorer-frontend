@@ -17,7 +17,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  color: #fff;
+  color: #000;
   margin: 0;
 }
 
@@ -32,6 +32,7 @@
     left: calc(50% - 20px);
     margin: 0;
     bottom: 60px;
+    color: #2BE080;
   }
 
   .not-found__back:hover {

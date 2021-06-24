@@ -1,0 +1,110 @@
+.card {
+  margin: 0;
+  padding: 0;
+  background: #FDFDFD;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px;
+}
+
+.card__name {
+  font-family: 'Inter', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color:#000000;
+  margin: 0 0 9px 0;
+  padding: 0;
+}
+
+.card__duration {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px;
+  display: flex;
+  align-items: center;
+  color: #A0A0A0;
+}
+
+.card__disabled-btn {
+  display: none;
+}
+
+.card__favorite-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-image: url('../../../images/favorite.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #F9F9F9;
+  border: none;
+  cursor: pointer;
+  transition: transform linear .2s;
+  transition: background-image linear .2s;
+  transition: background-color linear .2s;
+  box-shadow: 0 3px 4px 1px #A0A0A0;
+}
+
+.card__favorite-btn:hover {
+  transform: scale(1.1);
+  background-image: url('../../../images/favorite-active.svg');
+  background-color: #2BE080;
+}
+
+.card__close-btn {
+ width: 30px;
+ height: 30px;
+ border-radius: 50%;
+ background-image: url('../../../images/close-btn.svg');
+ background: no-repeat;
+ background-position: center;
+ background-color: #F9F9F9;
+ border: none;
+ cursor: pointer;
+ transition: transform linear .2s;
+ box-shadow: 0 3px 4px 1px #A0A0A0;
+}
+
+.card__close-btn {
+  transform: scale(1.1);
+}
+
+.card__image {
+  width: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width:890px) {
+  .card {
+    width: 100%;
+    max-width: 339px;
+  }
+
+  .movies__list {
+    gap: 36px 30px;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, 339px);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .card {
+    max-width: 300px;
+  }
+
+  .movies__list {
+    grid-template-columns: repeat(auto-fill, 300px);
+  }
+}
+
