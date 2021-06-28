@@ -16,22 +16,22 @@ function App() {
     <div className="app">
       <Switch>
         <Route exact path="/">
-          <Header />
+          <Header bgColor="grey" textColor="white" />
           <Main />
           <Footer />
-        </Route>
+        </Route>  
         <Route exact path="/movies">
-          <Header />
+          <Header bgColor="white" textColor="black"/>
           <Movies />
           <Footer />
         </Route>
         <Route exact path="/saved-movies">
-          <Header />
+        <Header bgColor="white" textColor="black"/>
           <Movies />
           <Footer />
         </Route>
         <Route exact path="/profile">
-          <Header />
+        <Header bgColor="white" textColor="black"/>
           <Profile />
         </Route>
         <Route exact path="/signin">

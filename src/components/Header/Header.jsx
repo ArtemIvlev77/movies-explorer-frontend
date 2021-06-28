@@ -5,7 +5,7 @@ import "./Header.css";
 import logo from "../../images/logo.svg";
 import Navigation from "../Navigation/Navigation";
 
-function Header() {
+function Header({ bgColor, textColor }) {
   const { pathname } = useLocation();
   const text = `${pathname === "/" ? "Регистрация" : "Аккаунт"}`;
 
@@ -16,7 +16,7 @@ function Header() {
   }
 
   return (
-    <header className={"header"}>
+    <header className={`header header_bg-color_${bgColor}`}>
       <div className="header__wrapper">
         <Link className="header__link" to="/">
           <img className="header__logo" src={logo} alt="Логотип" />
@@ -24,14 +24,15 @@ function Header() {
         {pathname === "/" ? "" : <Navigation />}
       </div>
       <div
-        className={`header__wrapper ${
-          pathname === "/" ? "" : "header__wrapper_burger"
+        className={`header__wrapper header__wrapper_porifle
+          ${pathname === "/" ? "" : "header__wrapper_burger"} ${
+          !activeBurger ? "header__profile" : ""
         }`}
       >
         <ul className="header__list-links">
           <li className="header__item">
             <Link
-              className="header__list-link"
+              className={`header__list-link header__textColor-${textColor}`}
               to={`${pathname === "/" ? "/signup" : "/profile"}`}
             >
               {text}
@@ -93,7 +94,7 @@ function Header() {
               }`}
             >
               <Link
-                className={"header__sign-text"}
+                className={`header__sign-text header__textColor-${textColor}`}
                 to={`${pathname === "/" ? "/signup" : "/profile"}`}
               >
                 {text}
