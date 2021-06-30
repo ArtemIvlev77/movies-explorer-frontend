@@ -45,8 +45,11 @@ padding: 100px 70px;
 }
 
 .techs__list {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
   display: flex;
+  justify-self: center;
   flex-wrap: wrap;
   align-items: center;
   column-gap: 10px;
@@ -72,18 +75,31 @@ padding: 100px 70px;
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
   .techs {
     padding: 90px 50px;
   }
 
   .techs__list {
-    margin: 0 0 90px 0;
+    justify-content: center;
+  }
+
+  .techs__list-item {
+    width: 84px;
+    height: 57px;
   }
 
   .techs__front-subtitle {
     font-size: 12px;
     line-height: 18px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .techs__front-title {
+    font-size: 30px;
+    line-height: 36px;
   }
 }
 

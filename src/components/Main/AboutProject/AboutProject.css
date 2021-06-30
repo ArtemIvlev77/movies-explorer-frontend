@@ -81,7 +81,7 @@
   color: #A0A0A0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
   .about {
     padding: 90px 50px;
   }
@@ -93,6 +93,15 @@
   .about__list {
     margin: 0 0 90px 0;
   }
+
+  .about__description {
+    margin: 0 0 110px;
+  }
+
+  .about__duration {
+    margin: 0;
+  }
+
 }
 
 @media screen and (max-width: 425px) {

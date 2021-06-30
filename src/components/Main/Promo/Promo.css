@@ -80,7 +80,7 @@
   background: #2BE080;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
 
   .promo__text-content{
     display:flex;
@@ -119,6 +119,11 @@
   }
 }
 
+@media screen and (max-width: 450px) {
+.promo__learn-more {
+  margin-bottom: 30px;
+ }
+}
 @media screen and (max-width: 320px) {
 
   .promo__title {

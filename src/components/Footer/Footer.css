@@ -33,14 +33,14 @@
   font-family: 'Inter', Arial, sans-serif;
   font-weight: 400;
   font-size: 13px;
-  line-height: 16;
+  line-height: 16px;
 }
 
 .footer__list {
   list-style-type: none;
   display: flex;
   column-gap: 20px;
-  padding:0;
+  padding: 0;
   margin: 0;
 }
 
@@ -66,10 +66,12 @@
 @media screen and (max-width: 768px) {
   .footer {
     padding: 80px 30px 20px;
+    background-color: #fff;
   }
 }
 
-@media screen and (max-width: 320px) {
+
+@media screen and (max-width: 370px) {
   .footer {
     padding: 80px 10px 10px;
   }
@@ -85,11 +87,22 @@
   }
 
   .footer__list {
+    margin-top: 30px;
     flex-direction: column;
     row-gap: 12px;
   }
+  
+  .footer__nav {
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+  }
 
   .footer__copyright {
+    margin-top: 30px;
+    align-items: center;
     color: #8b8b8b;
+    order: 4;
   }
 }

@@ -34,7 +34,7 @@
   transition: 0.4s;
   border-radius: 36px;
   padding: 6px;
-  box-shadow: 0 3px 4px 1px #A0A0A0;
+  box-shadow: 0 2px 2px 1px #a0a0a0;
 }
 
 .filter__round::before {
@@ -45,21 +45,28 @@
   left: 3px;
   top: 2px;
   bottom: 2px;
-  background-color: #2BE080;
+  background-color: #fff;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   border-radius: 50%;
+  transition: background-color .3s;
+}
+
+.filter__input:disabled{
+  background-color: #fff;
 }
 
 .filter__input:checked + .filter__round {
-  background-color: #FFF;
+  background-color: #fff;
 }
 
 .filter__input:checked + .filter__round:before {
   -webkit-transform: translateX(14px);
   -ms-transform: translateX(14px);
   transform: translateX(14px);
+  background-color: #2BE080;
 }
+
 
 .filter__title {
   margin: 0;
@@ -72,5 +79,4 @@
   font-weight: normal;
   font-size: 12px;
   line-height: 18px;
-  color: #ffffff;
 }
