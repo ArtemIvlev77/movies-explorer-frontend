@@ -24,6 +24,7 @@
 .header__wrapper {
   display: flex;
   align-items: center;
+  column-gap: 45px;
 }
 
 .header__profile {
