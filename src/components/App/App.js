@@ -19,19 +19,19 @@ function App() {
           <Header bgColor="grey" textColor="white" />
           <Main />
           <Footer />
-        </Route>  
+        </Route>
         <Route exact path="/movies">
-          <Header bgColor="white" textColor="black"/>
+          <Header bgColor="white" textColor="black" />
           <Movies />
           <Footer />
         </Route>
         <Route exact path="/saved-movies">
-        <Header bgColor="white" textColor="black"/>
+          <Header bgColor="white" textColor="black" />
           <Movies />
           <Footer />
         </Route>
         <Route exact path="/profile">
-        <Header bgColor="white" textColor="black"/>
+          <Header bgColor="white" textColor="black" />
           <Profile />
         </Route>
         <Route exact path="/signin">

@@ -24,7 +24,6 @@
 .header__wrapper {
   display: flex;
   align-items: center;
-  column-gap: 13px;
 }
 
 .header__profile {
@@ -145,7 +144,6 @@
   height: 23px;
   display: none;
   cursor: pointer;
-  z-index: 3;
 }
 
 .header__burger-line {
@@ -154,6 +152,8 @@
   background-color: #000;
   margin: 0px auto 7px;
   transition: 0.4s;
+  position: relative;
+  z-index: 2;
 }
 
 .header__burger-line:last-of-type {
@@ -181,8 +181,7 @@
   position: fixed;
   width: 65%;
   height: 100vh;
-  background-color: #FFF;
-  z-index: 2;
+  background-color: #fff;
 }
 
 .header__burger-menu-wrap_active {
@@ -193,6 +192,7 @@
   justify-content: space-between;
   padding-bottom: 50px;
   box-sizing: border-box;
+  z-index: 1;
 }
 
 .header__burger-nav {
@@ -229,7 +229,7 @@
 }
 
 .header__wrapper_burger-menu {
-  color: #fff;
+  color: #000;
 }
 
 .header__sign-text {
@@ -260,12 +260,6 @@
 
   .header__wrapper_burger {
     display: none;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .header__container {
-    padding: 0 20px;
   }
 }
 

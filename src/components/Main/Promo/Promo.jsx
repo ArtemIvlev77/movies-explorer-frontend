@@ -15,7 +15,7 @@ function Promo() {
         </h3>
         <button className="promo__learn-more">Узнать больше</button>
         </div>
-        <img src={www} alt="www" className="promo__image" />
+        <div className="promo__image" />
       </div>
     </div>
   );
