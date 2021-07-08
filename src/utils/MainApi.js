@@ -41,7 +41,7 @@ class Api {
   }
 
   login(email, password) {
-    return fetch(`${this._baseUrl}/signup`, {
+    return fetch(`${this._baseUrl}/signin`, {
       method: "POST",
       headers: this._headers,
       body: JSON.stringify({ email, password }),
@@ -55,21 +55,21 @@ class Api {
     }).then((res) => this._addResult(res));
   }
 
-  getMovies(jwt) {
+  getSavedMovies(jwt) {
     return fetch(`${this._baseUrl}/movies`, {
       headers: {
         "content-type": "application/json",
-        Authorization: `Bearer  + ${jwt}`,
+        Authorization: `Bearer ${jwt}`,
       },
     }).then((res) => this._addResult(res));
   }
 
-  addMovie(movie, jwt) {
+  postMovie(movie, jwt) {
     return fetch(`${this._baseUrl}/movies`, {
       method: "POST",
       headers: {
         "content-type": "application/json",
-        Authorization: `Bearer + ${jwt}`,
+        Authorization: `Bearer ${jwt}`,
       },
       body: JSON.stringify({
         country: movie.country,
@@ -109,13 +109,13 @@ class Api {
   }
 }
 
-const api = new Api({
-  // baseUrl: 'https://movies-ivlev.nomoredomains.club',
-  baseUrl: "https://localhost:3000",
+const mainApi = new Api({
+  baseUrl: "https://api.movies-ivlev.nomoredomains.club",
+  // baseUrl: "https://localhost:3001",
   headers: {
     "Content-Type": "application/json",
     Authorization: `Bearer ${localStorage.getItem("jwt")}`,
   },
 });
 
-export default api;
+export default mainApi;

@@ -4,7 +4,7 @@ class MoviesApi {
     this._headers = headers;
   }
 
-  getMovies() {
+  getSavedMovies() {
     return fetch(`${this._baseUrl}`, { headers: this._headers }).then((res) =>
       this._checkRes(res)
     );
@@ -14,15 +14,15 @@ class MoviesApi {
     if (res.ok) {
       return res.json();
     }
-    return Promise.reject(new Error(`Ошибка : ${response.status}`));
+    return Promise.reject(new Error(`Ошибка : ${res.status}`));
   }
 }
 
-const MoviesApi = new MoviesApi({
+const moviesApi = new MoviesApi({
   baseUrl: "https://api.nomoreparties.co/beatfilm-movies",
   headers: {
     "Content-Type": "application/json",
   },
 });
 
-export default MoviesApi;
+export default moviesApi;

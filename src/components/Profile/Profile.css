@@ -5,7 +5,7 @@
   justify-content: center;
   flex-wrap: nowrap;
   margin: 0 auto;
-  height: 100vh;
+  min-height: 100vh;
   padding: 0 30px;
   box-sizing: border-box;
 }
@@ -18,7 +18,7 @@
   font-weight: 500;
   font-size: 24px;
   line-height: 29px;
-  color: #ffffff;
+  color: #000;
 }
 
 .profile__form {
@@ -48,7 +48,7 @@
   font-weight: 500;
   font-size: 11px;
   line-height: 13px;
-  color: #ffffff;
+  color: #000;
 }
 
 .profile__input {
@@ -58,9 +58,10 @@
   font-size: 11px;
   line-height: 13px;
   text-align: right;
-  color: #ffffff;
+  color: #000;
   background: none;
   border: none;
+  outline: none;
 }
 
 .profile__input::placeholder {
@@ -70,7 +71,7 @@
   font-size: 11px;
   line-height: 13px;
   text-align: right;
-  color: #ffffff;
+  color: #000;
 }
 
 .profile__btn-edit {
@@ -82,11 +83,24 @@
   font-size: 13px;
   line-height: 16px;
   text-align: center;
-  color: #ffffff;
+  color: #000;
   background: none;
   border: none;
   cursor: pointer;
   margin-bottom: 16px;
+}
+
+.profile__btn-edit:hover {
+  text-decoration: underline;
+}
+
+.profile__btn-edit:disabled {
+  cursor: not-allowed;
+  color: #8b8b8b;
+}
+
+.profile__btn-edit:disabled:hover {
+  text-decoration: none;
 }
 
 .profile__btn-logout {
@@ -103,4 +117,30 @@
   border: none;
   cursor: pointer;
   margin-bottom: 16px;
+}
+
+.profile__btn-logout:hover {
+  text-decoration: underline;
+}
+
+.profile__form-error {
+  color: #ee3465;
+  text-align: center;
+
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.profile__form-done {
+  color: #3DDC84;
+  text-align: center;
+
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
 }
