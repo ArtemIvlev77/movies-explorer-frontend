@@ -15,11 +15,11 @@ class Api {
   }
 
   setInfo(name, email, jwt) {
-    return fetch(`$this._baseUrl}/users/me`, {
+    return fetch(`${this._baseUrl}/users/me`, {
       method: "PATCH",
       headers: {
         "content-type": "application/json",
-        Authorization: `'Bearer ${jwt}`,
+        Authorization: `Bearer ${jwt}`,
       },
       body: JSON.stringify({
         name,
@@ -77,17 +77,17 @@ class Api {
         duration: movie.duration,
         year: movie.year,
         description: movie.description,
-        image: `https://movies-ivlev.nomoredomains.club${movie.image.url}`,
+        image: `https://api.nomoreparties.co${movie.image.url}`,
         trailer: movie.trailerLink,
         movieId: movie.id.toString(),
         nameRU: movie.nameRU,
         nameEN: movie.nameEN,
-        thumbnail: `https://movies-ivlev.nomoredomains.club${movie.image.url}`,
+        thumbnail: `https://api.nomoreparties.co${movie.image.url}`,
       }),
     }).then((res) => this._addResult(res));
   }
 
-  deleteMovie(movieId, jwt) {
+  removeMovie(movieId, jwt) {
     return fetch(`${this._baseUrl}/movies/${movieId}`, {
       method: "DELETE",
       headers: {

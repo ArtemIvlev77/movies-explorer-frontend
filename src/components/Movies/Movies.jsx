@@ -69,7 +69,7 @@ function Movies({ isLogin }) {
   );
 
   React.useEffect(() => {
-    if (filteredMovies.length >= filteredRenderedMovies.length) {
+    if (filteredRenderedMovies.length > filteredMovies.length) {
       setVisibilityBtnYet("movies__button_hidden");
     }
   }, [filteredMovies, filteredRenderedMovies]);

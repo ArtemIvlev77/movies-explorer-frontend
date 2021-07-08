@@ -70,18 +70,6 @@
   transition: linear .3s;
 }
 
-.card__favorite-btn_active:hover{
-  background-image: url('../../../images/close-btn.svg');
- background-color: #f9f9f9;
- width: 30px;
- height: 30px;
- border-radius: 50%;
- background-repeat: no-repeat;
- background-position: center;
- border: none;
- cursor: pointer;
-}
-
 .card__close-btn {
  background-image: url('../../../images/close-btn.svg');
  background-color: #f9f9f9;

@@ -5,9 +5,9 @@ import "./Header.css";
 import logo from "../../images/logo.svg";
 import Navigation from "../Navigation/Navigation";
 
-function Header({ bgColor, textColor }) {
+function Header({ bgColor, textColor, isLogin }) {
   const { pathname } = useLocation();
-  const text = `${pathname === "/" ? "Регистрация" : "Аккаунт"}`;
+  const text = `${pathname === "/" && !isLogin ? "Регистрация" : "Аккаунт"}`;
 
   const [activeBurger, setActiveBurger] = React.useState(false);
 
@@ -21,11 +21,11 @@ function Header({ bgColor, textColor }) {
         <Link className="header__link" to="/">
           <img className="header__logo" src={logo} alt="Логотип" />
         </Link>
-        {pathname === "/" ? "" : <Navigation />}
+        {pathname === "/" && !isLogin ? "" : <Navigation />}
       </div>
       <div
         className={`header__wrapper header__wrapper_porifle
-          ${pathname === "/" ? "" : "header__wrapper_burger"} ${
+          ${pathname === "/" && !isLogin ? "" : "header__wrapper_burger"} ${
           !activeBurger ? "header__profile" : ""
         }`}
       >
@@ -33,13 +33,13 @@ function Header({ bgColor, textColor }) {
           <li className="header__item">
             <Link
               className={`header__list-link header__textColor-${textColor}`}
-              to={`${pathname === "/" ? "/signup" : "/profile"}`}
+              to={`${pathname === "/" && !isLogin ? "/signup" : "/profile"}`}
             >
               {text}
             </Link>
           </li>
           <li className="header__item">
-            {pathname === "/" ? (
+            {pathname === "/" && !isLogin ? (
               <Link className="header__list-link" to="/signin">
                 Войти
               </Link>
@@ -49,7 +49,7 @@ function Header({ bgColor, textColor }) {
           </li>
         </ul>
       </div>
-      {pathname === "/" ? (
+      {pathname === "/" && !isLogin ? (
         ""
       ) : (
         <div>
