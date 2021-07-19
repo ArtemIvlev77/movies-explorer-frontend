@@ -1,0 +1,151 @@
+.promo {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.promo__wrapper {
+  display: flex;
+  justify-content: space-between;
+  background-color:#5C5C5C;
+  padding: 75px 70px 0;
+}
+
+.promo__text-content {
+ align-self: flex-start;
+}
+
+.promo__title {
+  font-family: 'Inter', Arial, sans-serif;
+  max-width: 640px;
+  min-height: 174px;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 58px;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 36px;
+}
+
+.promo__subtitle {
+  max-width: 310px;
+  min-height: 32px;
+  font-family: 'Inter', Arial, sans-serif;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: left;
+  opacity: .5;
+  margin-top: 0;
+  margin-bottom: 146px;
+}
+
+.promo__image {
+  width: 310px;
+  height: 304px;
+  transition: linear 20s;
+}
+
+.promo__image:hover {
+  transform: scale(1.1);
+  transform: rotate(360deg);
+}
+
+
+
+.promo__learn-more {
+  max-width: 129px;
+  font-family: 'Inter', Arial, sans-serif;
+  padding: 10px 20px;
+  background-color: transparent;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 3px;
+  outline-width: 10px;
+  outline-color: #fff;
+  cursor: pointer;
+  margin-bottom: 75px;
+  white-space: nowrap;
+  transition: ease-in-out .3s;
+}
+
+.promo__learn-more:hover {
+  transform: scale(1.2);
+  background: #2BE080;
+}
+
+@media screen and (max-width: 770px) {
+
+  .promo__text-content{
+    display:flex;
+    flex-direction: column;
+  }
+
+  .promo__title {
+    font-size: 40px;
+    line-height: 52px;
+    text-align: center;
+  }
+
+  .promo__subtitle {
+    text-align: center;
+    align-self: center;
+    margin: 0 0 22px;
+    margin-bottom: 92px;
+  }
+
+  .promo__wrapper {
+    flex-direction: column;
+  }
+
+  .promo__image {
+    align-self: center;
+    margin-bottom: 48px;
+    order: -1;
+    width: 310px;
+    height: 304px;
+    
+  }
+
+  .promo__learn-more {
+      white-space: nowrap;
+      align-self: center;
+  }
+}
+
+@media screen and (max-width: 450px) {
+.promo__learn-more {
+  margin-bottom: 30px;
+ }
+}
+@media screen and (max-width: 320px) {
+
+  .promo__title {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .promo__item {
+    width: 82px;
+    height: 26px;
+    margin-right: 6px;
+  }
+
+  .promo__link {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  .promo__list {
+    flex-wrap: wrap;
+    row-gap: 10px;
+    flex-direction: column;
+  }
+}
