@@ -119,6 +119,10 @@
   }
 }
 
+.learn-more_link {
+  text-decoration: none;
+}
+
 @media screen and (max-width: 450px) {
 .promo__learn-more {
   margin-bottom: 30px;
