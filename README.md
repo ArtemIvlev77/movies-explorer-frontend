@@ -1,4 +1,4 @@
-###Ссылка на проект : https://movies-ivlev.nomoredomains.club/
+###Ссылка на проект : https://movies-explorer.netlify.app
 ## Проект запускается командой npm start
 #Проект портфолио ввиде React-приложения со следующим функционалом:
 1. Landing-page
