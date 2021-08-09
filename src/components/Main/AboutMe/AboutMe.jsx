@@ -1,5 +1,5 @@
 import React from "react";
-import profilePhoto from "../../../images/photo.png";
+import profilePhoto from "../../../images/photo.svg";
 import "./AboutMe.css";
 
 function AboutMe() {
@@ -10,31 +10,25 @@ function AboutMe() {
       </h2>
       <div className="about-me__cover">
         <div className="about-me__wrapper">
-          <h3 className="about-me__text-title">Артём</h3>
+          <h3 className="about-me__text-title">Виталий</h3>
           <p className="about-me__text-subtitle">
-            Фронтенд-разработчик, 31 год
+            Фронтенд-разработчик, 30 лет
           </p>
           <p className="about-me__text-description">
-            Я родился Саратове и с 2015 живу в Москве. Начал кодить в 2020 и
-            закончил курс Яндекс.Практикум по специальности Веб-разработчик.
-            Могу в JS, React, Node, Express (+MongoDB) и вёрстку по БЭМ.
-            Подобрался к TypeScript, разбираюсь что к чему =) У меня есть жена и
-            сын. Люблю слушать музыку, бег, велосипед и компьютерные игры.
+            Я родился и живу в Саратове, закончил факультет экономики СГУ. У
+            меня есть жена и дочь. Я люблю слушать музыку, а ещё увлекаюсь
+            бегом. Недавно начал кодить. С 2015 года работал в компании «СКБ
+            Контур». После того, как прошёл курс по веб-разработке, начал
+            заниматься фриланс-заказами и ушёл с постоянной работы.
           </p>
           <ul className="about-me__list">
             <li className="about-me__item">
-              <a
-                className="about-me__link"
-                href="https://www.facebook.com/artem.ivlev.1/"
-              >
+              <a className="about-me__link" href="https://praktikum.yandex.ru/">
                 Facebook
               </a>
             </li>
             <li className="about-me__item">
-              <a
-                className="about-me__link"
-                href="https://github.com/ArtemIvlev77"
-              >
+              <a className="about-me__link" href="https://praktikum.yandex.ru/">
                 Github
               </a>
             </li>

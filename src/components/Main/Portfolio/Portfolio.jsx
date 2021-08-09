@@ -10,7 +10,7 @@ function Portfolio() {
         <li className="portfolio__item">
           <a
             className="portfolio__link"
-            href="https://artemivlev77.github.io/how-to-learn/"
+            href="/#"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -21,7 +21,7 @@ function Portfolio() {
         <li className="portfolio__item">
           <a
             className="portfolio__link"
-            href="https://artemivlev77.github.io/russian-travel/"
+            href="/#"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -32,7 +32,7 @@ function Portfolio() {
         <li className="portfolio__item">
           <a
             className="portfolio__link"
-            href="https://mestoivlev.students.nomoredomains.icu/"
+            href="/#"
             target="_blank"
             rel="noopener noreferrer"
           >
