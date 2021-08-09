@@ -110,8 +110,9 @@ class Api {
 }
 
 const mainApi = new Api({
-  baseUrl: "https://api.movies-ivlev.nomoredomains.club",
+  // baseUrl: "https://api.movies-ivlev.nomoredomains.club",
   // baseUrl: "https://localhost:3001",
+  baseUrl: "https://safe-eyrie-18429.herokuapp.com/users?get",
   headers: {
     "Content-Type": "application/json",
     Authorization: `Bearer ${localStorage.getItem("jwt")}`,
